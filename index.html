@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Clube Sul</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+      
+       <li onclick="document.querySelector('.inicio').scrollIntoView({ behavior: 'smooth' })"><img src="./img/logo - clube sul_Prancheta 1.png" alt="Clube Sul"></li>
+      </div>
+      <nav>
+        <ul>
+          <li onclick="document.querySelector('.container.Planos').scrollIntoView({ behavior: 'smooth' })">Planos</li>
+          <li onclick="document.querySelector('.container.Servicos').scrollIntoView({ behavior: 'smooth' })">Serviços</li>
+          <li onclick="document.querySelector('.container.Sobre').scrollIntoView({ behavior: 'smooth' })">Sobre</li>
+          <li onclick="document.querySelector('.containerContatos').scrollIntoView({ behavior: 'smooth' })">Contatos</li>
+        </ul>
+      </nav>
+    </header>
+
+    <img class="inicio" src="./img/inicio.png" alt="">
+
+    <main class="container Planos">
+      <div class="list">
+        <div class="item ativo">
+          <div class="imagem_produto">
+            <img src="./img/Plano Ouro.PNG" alt="Ouro" />
+          </div>
+          <div class="content">
+            <p class="tag">Planos</p>
+            <p class="nome_plano">Plano Ouro</p>
+            <p class="descrição">Valor a consultar</p>
+            <button class="btn" onclick="window.open('https://cotacao.me/VBlZY1Qa?id=XDmQzXDB', '_blank')">Solicite cotação</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="imagem_produto">
+            <img src="./img/Plano Prata.PNG" alt="Prata" />
+          </div>
+          <div class="content">
+            <p class="tag">Planos</p>
+            <p class="nome_plano">Plano Prata</p>
+            <p class="descrição">Valor a consultar</p>
+            <button class="btn" onclick="window.open('https://cotacao.me/VBlZY1Qa?id=XDmQzXDB', '_blank')">Solicite cotação</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="imagem_produto">
+            <img src="./img/Plano rastreador +.PNG" alt="Rastreador +" />
+          </div>
+          <div class="content">
+            <p class="tag">Planos</p>
+            <p class="nome_plano">Plano Rastreador e Assistência 24h</p>
+            <p class="valor">R$ 89,90</p>
+            <button class="btn" onclick="window.open('https://cotacao.me/VBlZY1Qa?id=XDmQzXDB', '_blank')">Solicite cotação</button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="imagem_produto">
+            <img src="./img/Plano rastreador.PNG" alt="Rastreador" />
+          </div>
+          <div class="content">
+            <p class="tag">Planos</p>
+            <p class="nome_plano">Plano Rastreador</p>
+            <p class="valor">R$ 54,90</p>
+            <button class="btn" onclick="window.open('https://cotacao.me/VBlZY1Qa?id=XDmQzXDB', '_blank')">Solicite cotação</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="setas">
+        <button class="seta_btn" id="ant">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+</svg>
+        </button>
+
+        <button class="seta_btn" id="next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+  <path d="m10.293 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+</svg>
+        </button>
+      </div>
+
+      <div class="indicadores">
+        <div class="numeros">01</div>
+
+        <div class="pontos">
+          <div class="ponto ativo"></div>
+          <div class="ponto"></div>
+          <div class="ponto"></div>
+          <div class="ponto"></div>
+        </div>
+      </div>
+    </main>
+
+    <img class="facacotacao" src="./img/facacotacao.PNG" alt="">
+
+    <main class="container Servicos">
+      <div class="texto">
+        <h1>CONHEÇA NOSSOS SERVIÇOS</h1>
+      </div>
+
+      <div class="servicos">
+        <div class="fipi">
+          <img src="./img/fipi.PNG" alt="FIPI"/>
+          <p>Cobertura 100% da FIPI</p>
+          <button class="btn">Saiba mais</button>
+        </div>
+
+        <div class="furto">
+          <img src="./img/roubo e furto.PNG" alt="ROUBO"/>
+          <p>Cobertura Roubo e Furto</p>
+          <button class="btn">Saiba mais</button>
+        </div>
+
+        <div class="colisao">
+          <img src="./img/colisão.PNG" alt="COLISÃO"/>
+          <p>Cobertura Colisão</p>
+          <button class="btn">Saiba mais</button>
+        </div>
+
+        <div class="assitencia">
+          <img src="./img/assitencia 24h.PNG" alt="ASSISTÊNCIA"/>
+
+        <p>Assistência 24h</p>
+          <button class="btn">Saiba mais</button>
+        </div>
+
+      </div>
+      
+    </main>
+
+    <img class="protecaosegura" src="./img/protecaosegura.PNG" alt="">
+
+    <main class="container Sobre">
+      <div class="conteudo">
+        <div class="escrita"> 
+          
+          <h2>Segurança e assistência de excelência, a qualquer hora do dia</h2>
+          <p> <br> </p>
+
+          <p><strong>A Clube Sul vai além da proteção veicular: oferecemos tranquilidade, segurança e assistência quando você mais precisa.</strong></p>
+          <p> <br> </p>
+
+          <p>Nosso objetivo é tornar sua rotina e suas viagens mais seguras e despreocupadas. Contamos com uma equipe altamente capacitada, pronta para atender com agilidade e eficiência, 24 horas por dia, em qualquer lugar do país.</p>
+          <p>Somos uma associação de proteção veicular legalmente regulamentada pela <strong>Lei Complementar nº 213/2025</strong> , que reconhece a atuação das cooperativas e associações no setor. A Clube Sul está devidamente cadastrada junto à SUSEP, garantindo ainda mais segurança, credibilidade e transparência aos nossos associados. </p>
+          <p>Com uma estrutura sólida e profissionais dedicados, atuamos com ética, seriedade e comprometimento. Nosso foco está na excelência do atendimento, na qualidade dos serviços e na confiança de quem escolhe estar conosco.</p>
+       
+       </div>
+        <div class="foto">
+          <img src="./img/sobre.PNG" alt="">
+        </div>
+
+      </div>
+    </main>
+
+    <main class="containerContatos">
+    <div class="contato-faixa">
+
+  <div class="contato-info">
+    <h2>Fale Conosco</h2>
+    <p>Estamos prontos para te atender</p>
+  </div>
+
+  <div class="contato-itens">
+    <div class="item-contato">
+      <i class="fas fa-phone"></i>
+      <span>(51) 98162-8292</span>
+    </div>
+
+    <div class="item-contato">
+      <i class="fas fa-envelope"></i>
+      <span>atendimento@clubesulmais.com.br</span>
+    </div>
+
+    <div class="item-contato">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Viamão - RS</span>
+    </div>
+  </div>
+
+  <div class="contato-botoes">
+    <button class="btn" onclick="window.open('https://cotacao.me/VBlZY1Qa?id=XDmQzXDB', '_blank')">WhatsApp</button>
+    <Solicitar class="btn" onclick="window.open('https://cotacao.me/VBlZY1Qa?id=XDmQzXDB', '_blank')">Solicitar Contato</button>
+  </div>
+
+</div>
+    </main>
+  </body>
+<script src="./scripts.js"></script>
+
+</html>
