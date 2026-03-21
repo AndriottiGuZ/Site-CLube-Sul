@@ -30,6 +30,11 @@ antbutton.addEventListener('click', function() {
 })
 
 
-nextbutton.addEventListener('click', function() {
-    update(1);
-})
+document.querySelectorAll(".btn-servico").forEach(botao => {
+    botao.addEventListener("click", () => {
+
+        const card = botao.closest(".card-servico");
+        card.classList.toggle("ativo");
+
+    });
+});

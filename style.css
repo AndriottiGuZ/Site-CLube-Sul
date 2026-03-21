@@ -270,12 +270,13 @@ header nav ul li:hover::after{
     margin-right: 20px;
     border-radius: 10%;
     display: block;
+    
 }
 
-.servicos P{
+.servicos .titulo{
     font-size: 2rem;
     font-family: "Oswald", sans-serif;
-    color: #fff;
+    color: #ffffff;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-align: center;
@@ -284,6 +285,52 @@ header nav ul li:hover::after{
 .servicos .btn{
     display: block;
     margin: 20px auto;
+}
+
+.card-servico{
+    position: relative;
+    text-align: center;
+}
+
+/* imagem por cima */
+.card-img{
+    position: relative;
+    z-index: 2;
+    transition: 0.4s ease;
+}
+
+/* texto por baixo */
+.conteudo-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 380px;
+
+    background: #ffffff;
+    color: #f36a1b;
+
+    display: flex;
+    flex-direction: column; /* 👈 aqui vira coluna */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+    border-radius: 10%;
+    z-index: 1;
+
+    opacity: 1;
+    transition: 0.4s;
+
+    font-size: 1.5rem; /* 👈 menor */
+    line-height: 0.95;
+    max-width:500px;
+    font-family: "Oswald", sans-serif;
+}
+
+.card-servico.ativo .card-img{
+    opacity: 0; /* some só a imagem */
 }
 
 .conteudo{
