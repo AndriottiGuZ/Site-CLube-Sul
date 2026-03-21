@@ -28,6 +28,9 @@ function update(direction) {
 antbutton.addEventListener('click', function() {
     update(-1);
 })
+nextbutton.addEventListener('click', function() {
+    update(1);
+})
 
 
 document.querySelectorAll(".btn-servico").forEach(botao => {
