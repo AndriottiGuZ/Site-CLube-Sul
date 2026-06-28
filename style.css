@@ -736,3 +736,15 @@ header nav ul li:hover::after{
         gap: 20px !important;
     }
 }
+
+@media screen and (min-width: 1080px) and (max-width: 1920px) {
+    .contato-faixa {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 30px !important;
+    }
+
+    .contato-itens {
+        gap: 20px !important;
+    }
+}
